@@ -1,0 +1,663 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.8rem;
+    margin-bottom: 3rem;
+    width: 31%;
+    height: 30%;
+    padding: auto;
+    border-radius: 1.2rem;
+    background-color: black;
+
+}
+.display_container{
+    width:96%;
+    align-self: center;
+    justify-content: center;
+    background-color: black;
+    margin-top:20px;
+}
+input{
+    margin-left:35px; 
+}
+#row_one{
+    margin-top: .3rem;
+}
+#rowlast{
+    margin-bottom: 0.8rem;
+}
+.display_container #display{
+    font-weight: 600;
+    margin-right:32px;
+    width: 90%;
+    color: white;
+    height: 5.5rem;
+    border: 0;
+    outline: none;
+    align-items: center;
+    text-align: right;
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:black;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    /* border-bottom: 0.3rem solid gray;
+    border-left: 0.3rem solid gray;
+    border-right: 0.3rem solid gray; */
+
+
+}
+
+
+.display_container #main
+{
+    width: 90%;
+    margin-right:32px;
+    color: white;
+    height: 5.0rem;
+    border: 0;
+    outline: none;
+    align-items: center;
+    text-align: right;
+    font-size: 3.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:black;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    /* border-top: 0.3rem solid gray;
+    border-left: 0.3rem solid gray;
+    border-right: 0.3rem solid gray; */
+}
+input::placeholder{
+    color: white;
+    font-size: 2.0rem;
+}
+
+.btns 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 0.6rem;
+    background-color: black;
+
+}
+.btns{
+    border-bottom-left-radius:0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.btns .row button{
+    width: 58px;
+    height: 58px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    color: white;
+    border-radius: 50%;
+    border: .00625rem solid blue;
+    transition: 0.9s;
+    background-color: black;
+    margin: 8.2px;
+    padding: 4px;
+    box-shadow: 1px 1px 3px 3px  gray;
+}
+.btns .row button:hover{
+    background-color: blue;
+    color: white;
+    border: 0.3rem solid gray;
+}
+.btns .row button:focus-within{
+    background-color: rgb(36, 36, 170);
+    border: 0.3rem solid gray;
+}
+
+
+#clear,
+#backs,
+#equal{
+    background-color: blue;
+    color: white;
+}
+#clear,
+#backs,
+#equal :hover{
+    background-color: blue;
+    color: white;
+}
+#pow,
+#sin,
+#cos,
+#tan,
+#log,
+#root{
+    color: blue;
+}
+
+#root:focus-within{
+    color: white;
+}
+#log:focus-within{
+    color: white;
+}
+#tan:focus-within{
+    color: white;
+}
+#cos:focus-within{
+    color: white;
+}
+#sin:focus-within{
+    color: white;
+}
+#pow:focus-within{
+    color: white;
+}
+
+
+#log:hover{
+    color: white;
+} 
+#tan:hover{
+    color: white;
+} 
+#root:hover{
+    color: white;
+} 
+#cos:hover{
+    color: white;
+} 
+#sin:hover{
+    color: white;
+} 
+#pow:hover{
+    color: white;
+} 
+
+/* first media query */
+@media screen and (max-width:1200px) {
+    body{
+        background-color: white;
+    }
+    .container{
+        margin-top: 0.8rem;
+        margin-bottom: 2rem;
+        width: 33.5%;
+        height: 30%;
+        padding: auto;
+    
+    }
+    .display_container #display
+    {
+    font-weight: 450;
+    margin-right:32px;
+    width: 80%;
+    color: white;
+    height: 5.0rem;
+    font-size: 3.8rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .display_container #main
+    {
+        font-weight: bold;
+        width: 80%;
+    margin-right:32px;
+    color: white;
+    height: 4.5rem;
+    font-size: 2.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .display_container{
+        width:100%;
+        align-self: center;
+        justify-content: center;
+        background-color: black;
+        margin-top:28px;
+    }
+    .btns .row button{
+        width: 50px;
+        height: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.8rem;
+        color: white;
+        border-radius: 50%;
+        border: .00625rem solid blue;
+        transition: 0.7s;
+        background-color: black;
+        margin: 7px;
+        padding: 3px;
+    }
+    input{
+        margin-left:2.4rem; 
+    }
+#clear,
+#backs,
+#equal{
+    font-size: 1.6rem;
+    }
+    #clear,
+#backs,
+#equal :hover{
+    background-color: blue;
+    color: white;
+    font-size: 1.4rem;
+}
+#pow,
+#sin,
+#cos,
+#tan,
+#log,
+#root :hover{
+    font-size: 1.4rem;
+}
+}
+
+/* second media */
+@media screen and (max-width:980px) {
+    body{
+        background-color: white;
+    }
+    .container{
+        margin-top: 0.9rem;
+        margin-bottom: 0.5rem;
+        width: 80%;
+        height: 70vh;
+        padding: auto;
+        margin-top: 20px;
+    
+    }
+    .display_container #display
+    {
+    font-weight: 450;
+    margin-right:26px;
+    width: 90%;
+    color: white;
+    height: 5.0rem;
+    font-size: 4.7rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .display_container #main
+    {
+        font-weight: bold;
+        width: 90%;
+    margin-right:26px;
+    color: white;
+    height: 4.0rem;
+    font-size: 4.0rem;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .display_container{
+        width:90%;
+        align-self: center;
+        justify-content: center;
+        background-color: black;
+        margin-top:20rem;
+    }
+    .btns .row button{
+        width: 62px;
+        height: 62px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.2rem;
+        color: white;
+        border-radius: 50%;
+        border: .00625rem solid blue;
+        transition: 0.7s;
+        background-color: black;
+        margin: 9px;
+        padding: 3px;
+    }
+    input{
+        margin-left:1.8rem; 
+    }
+#clear,
+#backs,
+#equal{
+    font-size: 2.0rem;
+    }
+    #clear,
+#backs,
+#equal :hover{
+    background-color: blue;
+    color: white;
+    font-size: 2.0rem;
+}
+#pow,
+#sin,
+#cos,
+#tan,
+#log,
+#root :hover{
+    font-size: 2.0rem;
+}
+
+}
+
+/* third media */
+@media screen and (max-width:680px) {
+    body{
+        background-color: white;
+    }
+    .container{
+        margin-top: 0.8rem;
+        margin-bottom: 2rem;
+        width: 80%;
+        height: 100vh;
+        padding: auto;
+    
+    }
+    .display_container #display
+    {
+    font-weight: 450;
+    margin-right:32px;
+    width: 100%;
+    color: white;
+    height: 6.5rem;
+    font-size: 3.8rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .display_container #main
+    {
+        font-weight: bold;
+        width: 100%;
+    margin-right:32px;
+    color: white;
+    height: 4.0rem;
+    font-size: 3.0rem;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .display_container{
+        width:90%;
+        align-self: center;
+        justify-content: center;
+        background-color: black;
+        margin-top:15rem;
+        
+    }
+    .btns .row button{
+        width: 70px;
+        height: 70px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.8rem;
+        color: white;
+        border-radius: 50%;
+        border: .00625rem solid blue;
+        transition: 0.7s;
+        background-color: black;
+        margin: 7px;
+        padding: 3px;
+    }
+    input{
+        margin-left:0.8rem; 
+    }
+#clear,
+#backs,
+#equal{
+    font-size: 2.0rem;
+    }
+    #clear,
+#backs,
+#equal :hover{
+    background-color: blue;
+    color: white;
+    font-size: 1.9rem;
+}
+#pow,
+#sin,
+#cos,
+#tan,
+#log,
+#root :hover{
+    font-size: 1.9rem;
+}
+
+}
+
+/* fouth media query */
+@media screen and (max-width:535px){
+    body{
+        background-color: white;
+    }
+    .container{
+        margin-top: 0.8rem;
+        margin-bottom: 1.5rem;
+        width: 80%;
+        height: 100vh;
+        padding: auto;
+    
+    }
+    .display_container #display
+    {
+    font-weight: 350;
+    margin-right:32px;
+    width: 96%;
+    color: white;
+    height: 4.8rem;
+    font-size: 3.4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .display_container #main
+    {
+        font-weight: bold;
+        width: 96%;
+    margin-right:32px;
+    color: white;
+    height: 4.0rem;
+    font-size: 3.0rem;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .display_container{
+        width:90%;
+        align-self: center;
+        justify-content: center;
+        background-color: black;
+        margin-top:12rem;
+    
+    }
+    .btns .row button{
+        width: 65px;
+        height: 65px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.8rem;
+        color: white;
+        border-radius: 50%;
+        border: .00625rem solid blue;
+        transition: 0.7s;
+        background-color: black;
+        margin: 7px;
+        padding: 3px;
+    }
+    input{
+        margin-left:0.2rem; 
+    }
+#clear,
+#backs,
+#equal{
+    font-size: 1.9rem;
+    }
+    #clear,
+#backs,
+#equal :hover{
+    background-color: blue;
+    color: white;
+    font-size: 1.5rem;
+}
+#pow,
+#sin,
+#cos,
+#tan,
+#log,
+#root :hover{
+    font-size: 1.8rem;
+}
+
+}
+
+/* fifth media query */
+@media screen and (max-width:438px) {
+    body{
+        background-color: black;
+    }
+    .container{
+        margin-top: 0.8rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        height: 100vh;
+        padding: auto;
+    
+    }
+    .display_container #display
+    {
+    font-weight: 350;
+    margin-right:32px;
+    width: 100%;
+    color: white;
+    height: 4.8rem;
+    font-size: 3.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .display_container #main
+    {
+        font-weight: bold;
+        width: 100%;
+    margin-right:32px;
+    color: white;
+    height: 4.8rem;
+    font-size: 3.0rem;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .display_container{
+        width:100%;
+        align-self: center;
+        justify-content: center;
+        background-color: black;
+        margin-top:28px;
+        margin-bottom: 30px;
+    }
+    .btns .row button{
+        width: 60px;
+        height: 60px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.6rem;
+        color: white;
+        border-radius: 50%;
+        border: .00625rem solid blue;
+        transition: 0.7s;
+        background-color: black;
+        margin: 6px;
+        padding: 2px;
+    }
+    input{
+        margin-left:-0.1rem; 
+    }
+#clear,
+#backs,
+#equal{
+    font-size: 1.0rem;
+    }
+    #clear,
+#backs,
+#equal :hover{
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+}
+#pow,
+#sin,
+#cos,
+#tan,
+#log,
+#root :hover{
+    font-size: 1.5rem;
+}
+}
+
+
+/* sixt media query */
+@media screen and (max-width:328px) {
+    body{
+        background-color: black;
+    }
+    .container{
+        margin-top: 0.0rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        height: 100vh;
+        padding: auto;
+    
+    }
+    .display_container #display
+    {
+    font-weight: 350;
+    margin-right:32px;
+    width: 96%;
+    color: white;
+    height: 3.8rem;
+    font-size: 2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .display_container #main
+    {
+        font-weight: bold;
+        width: 96%;
+    margin-right:32px;
+    color: white;
+    height: 3.8rem;
+    font-size: 2.0rem;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .display_container{
+        width:90%;
+        align-self: center;
+        justify-content: center;
+        background-color: black;
+        margin-top:25px;
+    }
+    .btns .row button{
+        width: 48px;
+        height: 48px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.8rem;
+        color: white;
+        border-radius: 50%;
+        border: .00625rem solid blue;
+        transition: 0.7s;
+        background-color: black;
+        margin: 5px;
+        padding: 1px;
+    }
+    input{
+        margin-left:-0.1rem; 
+    }
+#clear,
+#backs,
+#equal{
+    font-size: 1.8rem;
+    }
+    #clear,
+#backs,
+#equal :hover{
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+}
+#pow,
+#sin,
+#cos,
+#tan,
+#log,
+#root :hover{
+    font-size: 1.5rem;
+}
+
+}
